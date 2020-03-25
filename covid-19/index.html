@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="COVID-19 (Coronavirus) Information">
+<meta property="og:image" content="COVID-19 (Coronavirus) Information">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        :focus {
+            outline: 0;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        input[type=search]::-webkit-search-cancel-button,
+        input[type=search]::-webkit-search-decoration,
+        input[type=search]::-webkit-search-results-button,
+        input[type=search]::-webkit-search-results-decoration {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        input[type=search] {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        textarea {
+            overflow: auto;
+            vertical-align: top;
+            resize: vertical;
+        }
+
+        audio,
+        canvas,
+        video {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            max-width: 100%;
+        }
+
+        audio:not([controls]) {
+            display: none;
+            height: 0;
+        }
+
+        [hidden] {
+            display: none;
+        }
+
+        html {
+            font-size: 100%;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        a:focus {
+            outline: thin dotted;
+        }
+
+        a:active,
+        a:hover {
+            outline: 0;
+        }
+
+        img {
+            border: 0;
+            -ms-interpolation-mode: bicubic;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        form {
+            margin: 0;
+        }
+
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: 0.35em 0.625em 0.75em;
+        }
+
+        legend {
+            border: 0;
+            padding: 0;
+            white-space: normal;
+            *margin-left: -7px;
+        }
+
+        button,
+        input,
+        select,
+        textarea {
+            font-size: 100%;
+            margin: 0;
+            vertical-align: baseline;
+            *vertical-align: middle;
+        }
+
+        button,
+        input {
+            line-height: normal;
+        }
+
+        button,
+        select {
+            text-transform: none;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"] {
+            -webkit-appearance: button;
+            cursor: pointer;
+            *overflow: visible;
+        }
+
+        button[disabled],
+        html input[disabled] {
+            cursor: default;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            box-sizing: border-box;
+            padding: 0;
+            *height: 13px;
+            *width: 13px;
+        }
+
+        input[type="search"] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+        textarea {
+            overflow: auto;
+            vertical-align: top;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        html,
+        button,
+        input,
+        select,
+        textarea {
+            color: #222;
+        }
+
+
+        ::-moz-selection {
+            background: #b3d4fc;
+            text-shadow: none;
+        }
+
+        ::selection {
+            background: #b3d4fc;
+            text-shadow: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        fieldset {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .chromeframe {
+            margin: 0.2em 0;
+            background: #ccc;
+            color: #000;
+            padding: 0.2em 0;
+        }
+
+        /*****************************************************************************/
+
+        h1 {
+            font-size: 2.9em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+        }
+
+        p {
+            padding: 3% 3% 3% 3%;
+        }
+
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+            padding: 0% 3% 0% 3%;
+        }
+
+        b {
+            font-weight: bold;
+        }
+
+        i {
+            font-style: italic;
+        }
+
+        /*****************************************************************************/
+
+        .introductionButton {
+            background-color: #4C8BF5;
+            color: white;
+            cursor: default;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.7em;
+            border-radius: 12px;
+        }
+
+        .introduction {
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            text-align: left;
+            width: 98%;
+            margin: auto;
+        }
+
+        .body {
+            text-align: center;
+            margin: auto;
+            width: 50%;
+            font-family: 'Roboto';
+        }
+
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: #f1f1f1;
+            text-align: left;
+            width: 98%;
+            margin: auto;
+        }
+
+        .collapsible {
+            background-color: #4C8BF5;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.7em;
+            border-radius: 12px;
+
+        }
+
+        .collapsible:before {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            margin-left: 5px;
+
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+
+        }
+
+        .active:before {
+            content: "\2212";
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /*****************************************************************************/
+
+        @media only screen and (max-width: 768px) {
+            .body {
+                width: 90%;
+            }
+
+            .column {
+                width: 100%;
+            }
+        }
+
+        /*****************************************************************************/
+    </style>
+
+</head>
+
+<body class="body">
+
+    <h1>COVID-19 (Coronavirus) Information</h1><br>
+
+    <h2>(click each section to open and close it.)</h2><br>
+
+    <button class="introductionButton">&emsp;&emsp;Introduction</button>
+
+    <div class="introduction">
+
+        <p>
+
+            <font color="red">LAST UPDATED: March 22nd, 2020 at approximately 5:30pm CST<br><br>
+
+            NOTE: I will continue to add new information so check back often,</font> DO NOT assume the information on this page is the most recent or accurate information. It's only what I as an individual have been able to research.<br><br>
+
+            Hey everyone,<br><br>
+
+            I'm writing because I feel that the response to COVID-19 (Coronavirus) by citizens, businesses and the government in the US has been irresponsible at best. In my opinion there is much misinformation given from a variety of sources. Most importantly, do your own research, don't listen to a single news source and don't just listen to me. I've included full references at the bottom of the page to anything I've stated as fact so that it can be verified and decided if you personally trust it. Just match up the number in parentheses next to the statement, with the number next to the reference link at the bottom of each section.<br><br>
+
+            <font color="red">IMPORTANT: Social distancing and taking preventitive measures is VERY IMPORTANT, even if you're young, healthy and will recover, if the disease is spread too quickly, hospitals can and will be overcrowded meaning PEOPLE WILL DIE.</font><br><br>
+
+            What I would consider the two most important and trustworthy places are the World Health Organization (1) and the Centers for Disease Control (2) websites. Two good secondary sources are Wikipedia (3) and Reddit (5). Wikipedia gives full source links for any information it claims as true so you can verify its claims. Some people seem to think Wikipedia is not trustworthy, but I feel nowadays it is one of the most reputable sources out there. Changes to each page are monitored extensively, and as I stated before sources are given for all claims, so you can verify anything that is said, or else it is stated to not have a source, at which point you probably should ignore the claim. Reddit usually gets new information first, but because it relies on user submitted content it's necessary to be careful what you trust.<br><br>
+
+            The reliability and factuality of news sources is important. I've personally found the "media bias chart" by Ad Fontes Media to be the most reliable measure of news sources. (4) If you disagree, do your own research and find a ranking system that you feel you can trust. Just please don't trust a single news source, always find multiple sources and remember just because a news source is reliable doesn't mean an individual article is reliable, as well as vice versa.<br><br>
+
+            <font color="red">ONLINE NEWS ARTICLE BROWSING TIP</font><br>
+            If you try to access a news article on a website that asks you to pay or create an account in order to access the article, you can sometimes bypass this by placing a period after the ".com" and before the "/" for example, change <br><br>"https://www.nytimes.com/2020/03/19/us/politics/trump-coronavirus-outbreak.html" to <br> "https://www.nytimes.<b>
+                <font color="red">com./2020</font>
+            </b>/03/19/us/politics/trump-coronavirus-outbreak.html"<br><br>
+
+            This doesn't always work. <br><br>
+
+            <img src="images/Media-Bias-Chart-5.1-Unlicensed_Social-Media-1200x765.jpg" alt="media bias chart" class="center" width="100%" height="100%"><br>
+
+            1. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">https://www.who.int/emergencies/diseases/novel-coronavirus-2019</a><br><br>
+
+            2. <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">https://www.cdc.gov/coronavirus/2019-ncov/index.html</a><br><br>
+
+            3. <a href="https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic">https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic</a><br><br>
+
+            4. <a href="https://www.adfontesmedia.com/interactive-media-bias-chart/?v=402f03a963ba">https://www.adfontesmedia.com/interactive-media-bias-chart/?v=402f03a963ba</a><br><br>
+
+            5. <a href="https://www.reddit.com/r/Coronavirus/">https://www.reddit.com/r/Coronavirus/</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Dr. Li Wenliang</button>
+
+    <div class="content">
+
+        <p>Dr. Li Wenliang was a Chinese opthalmologist who was one of the first people to bring attention to the possibility of an outbreak. He was admonished by the Chinese police and told to stop making false statements. On January 8th he contracted COVID-19 while seeing a patient at his hospital. Li died on February 7th. He left behind his son and pregnant wife. A happier side to this tragedy is that Li's parents were also infected, but made full recoveries. Thank you for your sacrifice Dr. Li Wenliang, you will be remembered. (1)</p>
+
+        <div class="row">
+
+            <div class="column">
+
+                <img src="images/00virus-reconstruct-1-superJumbo.jpg" alt="photograph of Dr. Li Wenliang" class="center" width="66.4%" height="66.4%">
+
+            </div>
+
+            <div class="column">
+
+                <img src="images/Li_Wen_Liang.jpg" alt="photograph of Dr. Li Wenliang" class="center" width="66.4%" height="66.4%">
+
+            </div>
+
+        </div>
+
+        <p>
+
+            1. <a href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30382-2/fulltext">https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)30382-2/fulltext</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;COVID-19 Facts and Statistics</button>
+
+    <div class="content"><br>
+
+        <ul>
+
+            <li>The name of the virus is SARS-CoV-2 (15), from a family of viruses called Coronaviruses. This particular virus causes the disease labelled COVID-19. (16)</li><br>
+
+            <li>On March 7th, 2020 a situation summary from the United States CDC stated, " Public health and healthcare systems may become overloaded, with elevated rates of hospitalizations and deaths." (17)</li><br>
+
+            <li>
+                <font color="red">It is currently unknown if past infection provides immunity, there are reported cases of people recovering and then testing positive again. It is unclear if these cases are a result of reinfection, relapse, or a testing error. Further information is being gathered. </font> (4)(5)(6)
+            </li><br>
+
+            <li>There is thought to be a large amount of unreported cases, because some people experience mild or no symptoms. <font color="red">What this means is the virus is spreading silently and there are most likely many more cases than we know about.</font> (12)(13)
+            </li><br>
+
+            <li>On March 13th, 2020 the World Health Organization declared Europe the new epicentre of the COVID-19 epidemic after the rate of cases in Europe surpassed those in other regions of the world. (11)</li><br>
+
+            <li> for the whole world there are 335,403+ confirmed cases, 97,636+ recoveries, and 14,611+ deaths (7)(8) (updated March 22nd, 2020 at 5:30pm CST)</li><br>
+
+            <li>for the United States there are 32,356+ confirmed cases, 178+ recoveries and 414+ deaths (14) (updated March 22nd, 2020 at 5:30 CST)</li><br>
+
+            <li>the World Health Organization recognized COVID-19 as a global pandemic on March 11th, 2020 (1)</li><br>
+
+            <li>time from exposure to onset of symptoms is generally between 2 and 14 days with an average of 5 to 6 days (3)</li><br>
+
+            <li>the basic reproduction number (R-naught) has been estimated at anywhere from 2.13 to 4.82, meaning each infection is expected to result in 2.13 and 4.82 new infections if no members of the community are immune and no preventitive measures are taken. The r-naught will change as more statistics are gathered (2)(9)(10)</li>
+
+        </ul>
+
+        <p>
+
+            <video width="100%" height="100%" controls>
+                <source src="videos/COVID19_in_numbers-_R0,_the_case_fatality_rate_and_why_we_need_to_flatten_the_curve.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video><br><br>
+
+            1. <a href="https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020">https://www.who.int/dg/speeches/detail/who-director-general-s-opening-remarks-at-the-media-briefing-on-covid-19---11-march-2020</a><br><br>
+
+            2. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/</a><br><br>
+
+            3. <a href="https://www.who.int/news-room/q-a-detail/q-a-coronaviruses">https://www.who.int/news-room/q-a-detail/q-a-coronaviruses</a><br><br>
+
+            4. <a href="https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response">https://www.immunology.org/news/bsi-open-letter-government-sars-cov-2-outbreak-response</a><br><br>
+
+            5. <a href="https://www.latimes.com/world-nation/story/2020-03-13/china-japan-korea-coronavirus-reinfection-test-positive">https://www.latimes.com/world-nation/story/2020-03-13/china-japan-korea-coronavirus-reinfection-test-positive</a><br><br>
+
+            6. <a href="https://www.caixinglobal.com/2020-02-26/14-of-recovered-covid-19-patients-in-guangdong-tested-positive-again-101520415.html">https://www.caixinglobal.com/2020-02-26/14-of-recovered-covid-19-patients-in-guangdong-tested-positive-again-101520415.html</a><br><br>
+
+            7. <a href="https://www.worldometers.info/coronavirus/">https://www.worldometers.info/coronavirus/</a><br><br>
+
+            8. <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6</a><br><br>
+
+            9. <a href="https://www.medrxiv.org/content/10.1101/2020.02.10.20021675v2">https://www.medrxiv.org/content/10.1101/2020.02.10.20021675v2</a><br><br>
+
+            10. <a href="https://www.med.hku.hk/f/news/3549/7418/Wuhan-coronavirus-outbreak_AN-UPDATE_20200127.pdf">https://www.med.hku.hk/f/news/3549/7418/Wuhan-coronavirus-outbreak_AN-UPDATE_20200127.pdf</a><br><br>
+
+            11. <a href="https://www.bbc.com/news/world-europe-51876784">https://www.bbc.com/news/world-europe-51876784</a><br><br>
+
+            12. <a href="https://www.medrxiv.org/content/10.1101/2020.02.14.20023127v1">https://www.medrxiv.org/content/10.1101/2020.02.14.20023127v1</a><br><br>
+
+            13. <a href="https://www.medrxiv.org/content/10.1101/2020.02.17.20024075v1">https://www.medrxiv.org/content/10.1101/2020.02.17.20024075v1</a><br><br>
+
+            14. <a href="https://www.worldometers.info/coronavirus/country/us/">https://www.worldometers.info/coronavirus/country/us/</a><br><br>
+
+            15. <a href="https://www.nature.com/articles/s41564-020-0695-z">https://www.nature.com/articles/s41564-020-0695-z</a><br><br>
+
+            16. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/technical-guidance/naming-the-coronavirus-disease-(covid-2019)-and-the-virus-that-causes-it</a><br><br>
+
+            17. <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fsummary.html">https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fsummary.html</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Symptoms</button>
+
+    <div class="content">
+
+        <p>
+
+            <img src="images/Coronavirus_Symptoms___WHO_joint_mission_2.png" alt="symptoms by percentage" width="100%" height="100%"><br><br>
+
+            Other symptoms are Haemoptysis at 0.9% and Conjunctival congestion at 0.8%. As the image notes, runny noses are unlikely <font color="red">(BUT NOT IMPOSSIBLE)</font> with COVID-19, if you have a runny nose it's much more likely to be the flu, allergies or another illness. (1)<br><br>
+
+            The time from exposure to onset of symptoms is generally between 2 and 14 days with an average of 5 days. (2)<br><br>
+
+            The time from onset of symptoms to recovery for mild cases is approximately 2 weeks and is 3 to 6 weeks for those with severe/critical cases. (3)<br><br>
+
+            There is thought to be a large amount of unreported cases, because some people experience mild or no symptoms. <font color="red">What this means is the virus is spreading silently and there are most likely many more cases than we know about.</font>(4)(5)<br><br>
+
+            1. <a href="https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf">https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf</a><br><br>
+
+            2. <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html">https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fsymptoms.html</a><br><br>
+
+            3. <a href="https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf">https://www.who.int/docs/default-source/coronaviruse/who-china-joint-mission-on-covid-19-final-report.pdf</a><br><br>
+
+            4. <a href="https://www.medrxiv.org/content/10.1101/2020.02.14.20023127v1">https://www.medrxiv.org/content/10.1101/2020.02.14.20023127v1</a><br><br>
+
+            5. <a href="https://www.medrxiv.org/content/10.1101/2020.02.17.20024075v1">https://www.medrxiv.org/content/10.1101/2020.02.17.20024075v1</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Prevention (What You Need To Do)</button>
+
+    <div class="content">
+
+        <p>
+
+            <img src="images/Covid-19-curves-graphic-social-v3.gif" alt="flatten the curve to save lives" width="100%" height="100%"><br><br>
+
+            Transmission of the virus from one person to another primarily occurs via respiratory droplets from coughs and sneezes within a range of about 6 feet. (1) Touching surfaces that have been touched someone who is contaminated is another possible source of infection. (2)<br>
+
+        </p>
+
+        <ul>
+
+            Recommended measures to prevent the disease from the WHO and CDC: (3)(4)
+
+            <li>frequent hand washing with soap and hot water</li>
+
+            <li>maintaining distance from other people</li>
+
+            <li>avoid touching eyes, nose or mouth</li>
+
+            <li>stay home</li>
+
+            <li>avoid travel and public activities</li>
+
+            <li>if soap and water are not available use alcohol-based hand sanitizer</li>
+
+            <li>immediately dispose of used tissues in receptacles with lids</li>
+
+            <li>do not shake hands</li>
+
+            <br>
+
+            Recommendations based on what I've seen from other countries, states and communities:
+
+            <li>work from home if possible</li>
+
+            <li>avoid gatherings of more than 5 people (avoiding gatherings completely is best)</li>
+
+            <li>don't have friends or others into your home</li>
+
+            <li>order groceries through delivery services</li>
+
+            <li>if you must go to the grocery store, go by yourself</li>
+
+            <li>some cities are only allowing one person per household to go out every 2 days for necessities (5)</li>
+
+        </ul>
+
+        <p>
+
+            1.<a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Ftransmission.html">https://www.cdc.gov/coronavirus/2019-ncov/prepare/transmission.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Ftransmission.html</a><br><br>
+
+            2.<a href="https://www.who.int/docs/default-source/coronaviruse/getting-workplace-ready-for-covid-19.pdf">https://www.who.int/docs/default-source/coronaviruse/getting-workplace-ready-for-covid-19.pdf</a><br><br>
+
+            3. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public</a><br><br>
+
+            4. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html">https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html</a><br><br>
+
+            5. <a href="https://www.channelnewsasia.com/news/asia/hangzhou-and-taizhou-cities-far-from-virus-epicentre-implement-12388714">https://www.channelnewsasia.com/news/asia/hangzhou-and-taizhou-cities-far-from-virus-epicentre-implement-12388714</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;COVID-19 Mortality Rate</button>
+
+    <div class="content">
+
+        <p>
+
+            <img src="images/1 CULXjfVhqJaJvAgN-CMS6w.jpeg" alt="flu vs. covid-19 mortality rate by age" width="100%" height="100%"><br><br>
+
+            As of February 26th no deaths have occured in anyone younger than 10. (2) As for other age ranges, to put them into a more clear statistic of APPROXIMATELY (these statistics are varying between countries dependent on how long their outbreaks have had to spread, I'm seeing roughly 2% differences between statistics) how many people who contract the disease will die: (1)
+
+        </p>
+
+        <ul>
+
+            <li>1 in 500 between the ages of 10-19</li>
+
+            <li>1 in 500 between the ages of 20-29</li>
+
+            <li>1 in 500 between the ages of 30-39</li>
+
+            <li>1 in 250 between the ages of 40-49</li>
+
+            <li>3.25 in 250 between the ages of 50-59</li>
+
+            <li>9 in 250 between the ages of 60-69</li>
+
+            <li>2 in 25 between the ages of 70-79</li>
+
+            <li>3.7 in 25 above age 80</li>
+
+        </ul>
+
+        <p>
+
+            <img src="images/Comorbidity_and_severity_in_covid-19_data_from_China_CDC_Weekly_2020,_2(8),_pp._113-122_(cropped).png" alt="flu vs. covid-19 mortality rate by age" width="100%" height="100%"><br><br>
+
+            This graph measures the case fatality rate relating to other health issues regardless of age. <br><br>
+
+            These two graphs need to be read separately, they cannot be combined or looked at together.<br><br>
+
+            It's important to note that while it is true that people with other health issues are more likely to develop into a severe case of COVID-19, (1) people with no health issues can also develop severe symptoms. It is <font color="red">NOT</font> just the elderly or the sick that can die from this disease.<br><br>
+
+            1. <a href="http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51">http://weekly.chinacdc.cn/en/article/id/e53946e2-c6c4-41e9-9a9b-fea8db1a8f51</a><br><br>
+
+            2. <a href="https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/">https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Stay-at-Home Executive Order (Illinois)</button>
+
+    <div class="content">
+
+        <p>
+
+            The official Illinois government website for COVID-19 has up-to-date executive orders detailing what the state is doing. (1)<br><br>
+
+            Beginning March 21st, 2020 and currently lasting until April 7th, 2020 (though I personally think it will be extended) a "stay-at-home" executive order has been put into affect. These are some of the things the executive order details: (2)
+
+        </p>
+
+        <ul>
+
+            <li>Stay at home or place of residence</li><br>
+
+            <li>non-essential business and operations must cease, essential business examples are:</li>
+
+            <ul>
+
+                <li>stores that sell groceries and medicine</li>
+
+                <li>food, beverage, and cannabis production and agriculture</li>
+
+                <li>organizations that provide charitable and social services</li>
+
+                <li>media</li>
+
+                <li>gas stations and businesses needed for transportation</li>
+
+                <li>financial institutions</li>
+
+                <li>hardware and supply stores</li>
+
+                <li>critical trades</li>
+
+                <li>mail, post, shipping, logistics, delivery, and pick-up services</li>
+
+                <li>educational institutions (not for students, only for purposes of facilitating distance learning, performing critical research, or performing essential functions)</li>
+
+                <li>laundry services</li>
+
+                <li>restaurants for consumption off-premises</li>
+
+                <li>supplies to work from home</li>
+
+                <li>supplies for essential businesses and operations</li>
+
+                <li>transportation</li>
+
+                <li>home-based care and services</li>
+
+                <li>residential facilities and shelters</li>
+
+                <li>day care centers for employees exempted by this executive order</li>
+
+                <li>manufacture, distribution, and supply chain for critical products and industries</li>
+
+                <li>critical labor union functions</li>
+
+                <li>hotels and motels</li>
+
+                <li>funeral services</li>
+
+            </ul>
+
+            <br>
+
+            <li>prohibited activites: </li>
+
+            <ul>
+
+                <li>all public and private gatherings of any number of people occurring outside a single household or living unit are prohibited</li>
+
+                <li>any gathering of more than ten people is prohibited</li>
+
+            </ul>
+
+            <br>
+
+            <li>individuals may leave their residence only to perform any of the following essential activities: </li>
+
+            <ul><br>
+
+                <li>for health and safety</li>
+
+                <ul>
+
+                    <li>seeking emergency services</li>
+
+                    <li>obtaining medical supplies or medication</li>
+
+                    <li>visiting a health care professional</li>
+
+                </ul><br>
+
+                <li>for necessary supplies and services</li>
+
+                <ul>
+
+                    <li>groceries and food</li>
+
+                    <li>household consumer products</li>
+
+                    <li>supplies needed to work from home</li>
+
+                    <li>products necessary to maintain the safety, sanitation, and essential operation of residences</li>
+
+                </ul><br>
+
+                <li>for certain types of work</li>
+
+                <ul>
+
+                    <li>healthcare and public health operations</li>
+
+                    <li>human services operations</li>
+
+                    <li>essential governmental functions</li>
+
+                    <li>essential infrastructure</li>
+
+                </ul><br>
+
+                <li>to take care of others</li>
+
+                <li>veterinary care and all healthcare services provided to animals</li>
+
+            </ul>
+
+            <br>
+
+            <li>social distancing requirements</li>
+
+            <ul>
+
+                <li>maintain at least six-foot social distancing from other individuals</li>
+
+                <li>washing hands with soap and water for at least twenty seconds as frequently as possible or using hand sanitizer</li>
+
+                <li>covering coughs or sneezes (into the sleeve or elbow, not hands)</li>
+
+                <li>regularly cleaning high-touch surfaces</li>
+
+                <li>no shaking hands</li>
+
+            </ul>
+
+        </ul>
+
+        <p>
+
+            1. <a href="https://www2.illinois.gov/sites/coronavirus/Pages/default.aspx">https://www2.illinois.gov/sites/coronavirus/Pages/default.aspx</a><br><br>
+
+            2. <a href="https://www2.illinois.gov/Documents/ExecOrders/2020/ExecutiveOrder-2020-10.pdf">https://www2.illinois.gov/Documents/ExecOrders/2020/ExecutiveOrder-2020-10.pdf</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;United States Government Response</button>
+
+    <div class="content">
+
+        <p>
+
+            From January 2020 to mid-March 2020, President Trump downplayed the threat posed by the coronavirus to the United States. (21)(22)(23)(24)(25)<br><br>
+
+            In the United States there are 32,356+ confirmed cases, 178+ recoveries and 414+ deaths (14) (updated March 22nd, 2020 at 5:30 CST) (12)<br><br>
+
+            On March 7th, 2020 a situation summary from the United States CDC stated, " Public health and healthcare systems may become overloaded, with elevated rates of hospitalizations and deaths." (13)<br><br>
+
+            The United States has tested 313.6 people per million. (2) To put this into perspective out of 78 data points from reporting countries, the United States is 57th. A CSV file with this data is available <a href="https://ourworldindata.org/grapher/covid19-tests-per-million-people">here</a> (click on data). (3) (updated March 21st, 2020 at 8:50pm CST)<br><br>
+
+            This graph may have more up to date statistics on testing per million than the text I have above depending on when I last updated the text.<br><br>
+            
+            <img src="https://ourworldindata.org/grapher/exports/covid19-tests-per-million-people.png" alt="tests per million people" width="100%" height="100%"><br><br>
+
+            In 2017, outgoing Obama administration officials briefed incoming Trump administration officials on how to respond to pandemics by using simulated scenarios. By the time of the coronavirus outbreak in the U.S., around two-thirds of the Trump administration officials who had been in the briefing had left the administration. (14)<br><br>
+
+            The Trump administration cut the budget of the CDC in 2018, causing the CDC to have to slash 80% of its global disease outbreak program, forcing the program to reduce its operations from 49 countries to 10. (3)(4) A Complex Crises Fund was also cut entirely which would have allowed the State Department to fund deployment of disease experts during outbreaks such as this. (5)<br><br>
+
+            In May of 2018, the administration disbanded the National Security Council global health security team that was created to lead the American response to a pandemic. (6)<br><br>
+
+            The Trump administration from January to August 2019 simulated a series of pandemic outbreaks from China and found that the U.S. government response was "underfunded, underprepared, and uncoordinated", with the "not to be disclosed" draft report detailing repeated cases of "confusion" during the exercises. A briefing was given to the United States Congress in December 2019 of some of the findings from the exercise, including the conclusion that the U.S. could not speedily manufacture certain medical supplies to cope with demand, because many of these items were imported. (15)<br><br>
+
+            On February 28th, 2020 President Trump asserted that Democrats were promoting a "new hoax" to harm him politically, that the press was in "hysteria mode" and he attempted to link the outbreak to Democratic immigration policies. (7)(8) Two weeks later he declared a national emergency.<br><br>
+
+            Vice-President Mike Pence has been appointed to head the response to COVID-19, his experience with the HIV epidemic in Indiana being referenced. In fact, Pence delibrately delayed Indiana's response to the epidemic, despite recommendations from the CDC. (9) <br><br>
+
+            When the World Health Organization distributed 1.4 million coronavirus tests in February, the U.S. chose instead to use its own tests. At that time, the U.S. Centers for Disease Control and Prevention had produced 160,000 coronavirus tests, but soon it was discovered that many were defective and gave inaccurate readings. As a result, less than 4,000 tests were conducted in the U.S. by February 27, with U.S. state laboratories only conducting around 200. In this period, academic laboratories and hospitals had developed their own tests, but were not allowed to use them until February 29, when the Food and Drug Administration issued approvals for them and private companies. (16)(17)(18)<br><br>
+
+            <font color="red">Regardless of anyone's political views, these things are concerning because they show that the United States was potentially UNPREPARED for this pandemic, there has been a delibrate minimization of the seriousness of this pandemic and even the government response now may be delayed.<br><br>
+
+                My point in drawing attention to this is be extra cautious in the United States! SOME of our state governments seem to have finally started acting independently to deal with the crisis. Even AFTER our federal government begins to take this seriously, the repercussion is that the virus has been spreading throughout the United States unchecked. Once testing becomes widespread, we will see a massive surge in the amount of positive cases.</font><br><br>
+
+            On March 11th 2020, President Trump said that health insurance companies agreed to waive all co-payments for coronavirus treatements and extend insurance coverage to cover coronavirus treatments. <font color="red">THIS IS CURRENTLY FALSE</font>. A representative of the insurance industry later clarified that, contrary to the president's statement, major health insurers have only agreed to waive co-payments for coronavirus TESTING, and not for treatment, which is much more costly. (2)<br><br>
+
+            In a vote that concluded at 12:30 am on Saturday March 14, 2020, the House passed the Families First Coronavirus Response Act (HR 6201) in a 363-40-1 vote after President Trump had tweeted in support of it. The bill provides for free coronavirus testing, "paid emergency leave and other resources intended to help stem the crisis and stabilize financial markets." The bill was sent to the Senate on March 16 after undergoing technical corrections, and was approved on March 18 with a vote of 90-8; President Trump signed the bill later that day. (1)<br><br>
+
+            1. <a href="https://www.usatoday.com/story/news/politics/2020/03/18/coronavirus-congress-weighs-cash-americans-lifelines-business/2868345001/">https://www.usatoday.com/story/news/politics/2020/03/18/coronavirus-congress-weighs-cash-americans-lifelines-business/2868345001/</a><br><br>
+
+            2. <a href="https://www.businessinsider.com/white-house-scrambles-to-clarify-details-on-coronavirus-response-2020-3">https://www.businessinsider.com/white-house-scrambles-to-clarify-details-on-coronavirus-response-2020-3</a><br><br>
+
+            3. <a href="https://markets.businessinsider.com/news/stocks/trump-defends-cuts-cdc-budget-federal-government-hire-doctors-coronavirus-2020-2-1028946602">https://markets.businessinsider.com/news/stocks/trump-defends-cuts-cdc-budget-federal-government-hire-doctors-coronavirus-2020-2-1028946602</a><br><br>
+
+            4. <a href="https://www.theguardian.com/world/2020/jan/31/us-coronavirus-budget-cuts-trump-underprepared">https://www.theguardian.com/world/2020/jan/31/us-coronavirus-budget-cuts-trump-underprepared</a><br><br>
+
+            5. <a href="https://fortune.com/2020/02/26/coronavirus-covid-19-cdc-budget-cuts-us-trump/">https://fortune.com/2020/02/26/coronavirus-covid-19-cdc-budget-cuts-us-trump/</a><br><br>
+
+            6. <a href="https://www.washingtonpost.com/news/to-your-health/wp/2018/05/10/top-white-house-official-in-charge-of-pandemic-response-exits-abruptly/">https://www.washingtonpost.com/news/to-your-health/wp/2018/05/10/top-white-house-official-in-charge-of-pandemic-response-exits-abruptly/</a><br><br>
+
+            7. <a href="https://www.theguardian.com/us-news/2020/feb/28/trump-calls-coronavirus-outbreak-a-hoax-and-links-it-to-immigration-at-rally?CMP=fb_us">https://www.theguardian.com/us-news/2020/feb/28/trump-calls-coronavirus-outbreak-a-hoax-and-links-it-to-immigration-at-rally?CMP=fb_us</a><br><br>
+
+            8. <a href="https://www.mediaite.com/tv/trump-goes-after-democrats-hitting-him-on-coronavirus-their-new-hoax-after-russia-impeachment/">https://www.mediaite.com/tv/trump-goes-after-democrats-hitting-him-on-coronavirus-their-new-hoax-after-russia-impeachment/</a><br><br>
+
+            9. <a href="https://www.washingtonpost.com/politics/2020/02/27/mike-pence-hiv-indiana/">https://www.washingtonpost.com/politics/2020/02/27/mike-pence-hiv-indiana/</a><br><br>
+
+            10. <a href="https://ourworldindata.org/covid-testing">https://ourworldindata.org/covid-testing</a><br><br>
+
+            11. <a href="https://ourworldindata.org/grapher/covid19-tests-per-million-people">https://ourworldindata.org/grapher/covid19-tests-per-million-people</a><br><br>
+
+            12. <a href="https://www.worldometers.info/coronavirus/country/us/">https://www.worldometers.info/coronavirus/country/us/</a><br><br>
+
+            13. <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fsummary.html">https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fsummary.html</a><br><br>
+
+            14. <a href="https://www.politico.com/news/2020/03/16/trump-inauguration-warning-scenario-pandemic-132797">https://www.politico.com/news/2020/03/16/trump-inauguration-warning-scenario-pandemic-132797</a><br><br>
+
+            15. <a href="https://www.nytimes.com./2020/03/19/us/politics/trump-coronavirus-outbreak.html">https://www.nytimes.com./2020/03/19/us/politics/trump-coronavirus-outbreak.html</a><br><br>
+
+            16. <a href="https://www.washingtonpost.com/business/2020/03/16/cdc-who-coronavirus-tests/">https://www.washingtonpost.com/business/2020/03/16/cdc-who-coronavirus-tests/</a><br><br>
+
+            17. <a href="https://www.washingtonpost.com/politics/trump-coronavirus-response-squandered-time/2020/03/07/5c47d3d0-5fcb-11ea-9055-5fa12981bbbf_story.html">https://www.washingtonpost.com/politics/trump-coronavirus-response-squandered-time/2020/03/07/5c47d3d0-5fcb-11ea-9055-5fa12981bbbf_story.html</a><br><br>
+
+            18. <a href="https://www.sciencemag.org/news/2020/02/united-states-badly-bungled-coronavirus-testing-things-may-soon-improve">https://www.sciencemag.org/news/2020/02/united-states-badly-bungled-coronavirus-testing-things-may-soon-improve</a><br><br>
+
+            19. <a href="https://www.nbcnews.com/politics/congress/house-vote-friday-democrats-coronavirus-relief-package-n1158306">https://www.nbcnews.com/politics/congress/house-vote-friday-democrats-coronavirus-relief-package-n1158306</a><br><br>
+
+            20. <a href="https://www.nbcnews.com/politics/congress/senate-democrats-have-prepped-third-coronavirus-aid-package-n1161506">https://www.nbcnews.com/politics/congress/senate-democrats-have-prepped-third-coronavirus-aid-package-n1161506</a><br><br>
+
+            21. <a href="https://apnews.com/138aee1ff66cd878c084731300ba529b">https://apnews.com/138aee1ff66cd878c084731300ba529b</a><br><br>
+
+            22. <a href="https://edition.cnn.com/2020/03/17/politics/fact-check-trump-always-knew-pandemic-coronavirus/index.html">https://edition.cnn.com/2020/03/17/politics/fact-check-trump-always-knew-pandemic-coronavirus/index.html</a><br><br>
+
+            23. <a href="https://www.factcheck.org/2020/03/trumps-statements-about-the-coronavirus/">https://www.factcheck.org/2020/03/trumps-statements-about-the-coronavirus/</a><br><br>
+
+            24. <a href="https://www.politico.com/news/2020/03/17/trump-shifting-coronavirus-tone-134100">https://www.politico.com/news/2020/03/17/trump-shifting-coronavirus-tone-134100</a><br><br>
+
+            25. <a href="https://www.theatlantic.com/politics/archive/2020/03/trumps-instincts-undermine-us-response-to-covid-19/608266/">https://www.theatlantic.com/politics/archive/2020/03/trumps-instincts-undermine-us-response-to-covid-19/608266/</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Is The World Overreacting?</button>
+
+    <div class="content">
+
+        <p>
+
+            I personally think the world isn't reacting enough. Either way, these are two good ways to look out what our reaction should be.
+
+        </p>
+
+        <blockquote class="twitter-tweet tw-align-center">
+            <p lang="en" dir="ltr">&quot;Everything we do before a pandemic will seem alarmist. Everything we do after will seem inadequate.&quot; - Michael Leavitt, former HHS Secretary under President George W. Bush</p>&mdash; Geoff Bennett (@GeoffRBennett) <a href="https://twitter.com/GeoffRBennett/status/1238985244608548865?ref_src=twsrc%5Etfw">March 15, 2020</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+
+        <blockquote class="twitter-tweet tw-align-center">
+            <p lang="en" dir="ltr">A school Superintendent said something profound in his address cancelling school for the next 3 weeks. “In the end, it will be impossible to know if we overreacted or did too much, but it will be QUITE apparent if we under reacted or did too little.”<br><br>Hear those words my friends.</p>&mdash; Douglas Massengill, Ed.D. (@drmassen) <a href="https://twitter.com/drmassen/status/1238911161573277697?ref_src=twsrc%5Etfw">March 14, 2020</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Testing Costs and Availability</button>
+
+    <div class="content">
+
+        <p>
+
+            When the World Health Organization distributed 1.4 million coronavirus tests in February, the U.S. chose instead to use its own tests. At that time, the U.S. Centers for Disease Control and Prevention had produced 160,000 coronavirus tests, but soon it was discovered that many were defective and gave inaccurate readings. As a result, less than 4,000 tests were conducted in the U.S. by February 27, with U.S. state laboratories only conducting around 200. In this period, academic laboratories and hospitals had developed their own tests, but were not allowed to use them until February 29, when the Food and Drug Administration issued approvals for them and private companies. (4)(5)(6)<br><br>
+
+            The United States has tested 313.6 people per million. (2) To put this into perspective out of 78 data points from reporting countries, the United States is 57th. A CSV file with this data is available <a href="https://ourworldindata.org/grapher/covid19-tests-per-million-people">here</a> (click on data). (3) (updated March 21st, 2020 at 8:50pm CST)<br><br>
+
+            This graph may have more up to date statistics on testing per million than the text I have above depending when I last updated the text.<br><br>
+            
+            <img src="https://ourworldindata.org/grapher/exports/covid19-tests-per-million-people.png" alt="tests per million people" width="100%" height="100%"><br><br>
+
+            On March 11th 2020, President Trump said that health insurance companies agreed to waive all co-payments for coronavirus treatements and extend insurance coverage to cover coronavirus treatments. <font color="red">THIS IS CURRENTLY FALSE</font>. A representative of the insurance industry later clarified that, contrary to the president's statement, major health insurers have only agreed to waive co-payments for coronavirus TESTING, and not for treatment, which is much more costly. (1)<br><br>
+
+            The Families First Coronavirus Response Act (HR 6201) provides for free coronavirus testing, paid emergency leave and other resources intended to help stem the crisis and stabilize financial markets. (7)<br><br>
+
+            1. <a href="https://www.businessinsider.com/white-house-scrambles-to-clarify-details-on-coronavirus-response-2020-3">https://www.businessinsider.com/white-house-scrambles-to-clarify-details-on-coronavirus-response-2020-3</a><br><br>
+
+            2. <a href="https://ourworldindata.org/covid-testing">https://ourworldindata.org/covid-testing</a><br><br>
+
+            3. <a href="https://ourworldindata.org/grapher/covid19-tests-per-million-people">https://ourworldindata.org/grapher/covid19-tests-per-million-people</a><br><br>
+
+            4. <a href="https://www.washingtonpost.com/business/2020/03/16/cdc-who-coronavirus-tests/">https://www.washingtonpost.com/business/2020/03/16/cdc-who-coronavirus-tests/</a><br><br>
+
+            5. <a href="https://www.washingtonpost.com/politics/trump-coronavirus-response-squandered-time/2020/03/07/5c47d3d0-5fcb-11ea-9055-5fa12981bbbf_story.html">https://www.washingtonpost.com/politics/trump-coronavirus-response-squandered-time/2020/03/07/5c47d3d0-5fcb-11ea-9055-5fa12981bbbf_story.html</a><br><br>
+
+            6. <a href="https://www.sciencemag.org/news/2020/02/united-states-badly-bungled-coronavirus-testing-things-may-soon-improve">https://www.sciencemag.org/news/2020/02/united-states-badly-bungled-coronavirus-testing-things-may-soon-improve</a><br><br>
+
+            7. <a href="https://www.nbcnews.com/politics/congress/house-vote-friday-democrats-coronavirus-relief-package-n1158306">https://www.nbcnews.com/politics/congress/house-vote-friday-democrats-coronavirus-relief-package-n1158306</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Misinformation</button>
+
+    <div class="content">
+
+        <br>
+
+        <ul>
+
+            <li>Mouthwash is not effective in prevention of the disease.</li>
+
+            <li>The disease can be transmitted in hot and humid climates.</li>
+
+            <li>Likewise, cold weather does not deter the virus either.</li>
+
+            <li>Hot baths will not prevent the disease.</li>
+
+            <li>Hand dryers are not effective in killing the virus.</li>
+
+            <li>UV lamps will not sterilize hands and/or skin.</li>
+
+            <li>Vaccines against other illnesses will not work against COVID-19. <font color="red">HOWEVER, vaccinations against respiratory illnesses are HIGHLY RECOMMENDED because they can prevent you developing those illnesses at the same time as COVID-19.</font>
+            </li>
+
+            <li>Rinsing your nose with saline will not prevent the illness.</li>
+
+            <li>
+                <font color="red">People of ALL ages can be infected, and HAVE died from COVID-19.</font> The exception seeming to be children under 10.
+            </li>
+
+            <li>There is very limited evidence that surgical masks are effective in prevention of the disease, though they may help to stop touching your face. Surgical masks are the lowest grade of protection and are designed mainly to protect OTHERS from the WEARER.</li>(1)(2)
+
+        </ul>
+
+        <p>
+
+            I don't feel that I need to provide sources for this, but I feel it should be said. Don't be racist. Prejudice, xenophobia and racism have increased towards Chinese and East Asian peoples. They didn't start this pandemic. Unfortunately, the disease HAPPENED to begin in an East Asian country. Most likely caused by a bat and a pangolin. (3) Chinese and East Asian people don't spread the disease anymore than anyone else from any other race or ethnicity. Treat everyone with kindness, respect and dignity.<br><br>
+            
+            Also, it's become very clear which people keep the world running, and it's not the billionaires, the rich and famous or the entertainment industry. It's all of our service workers who continue to go to work at grocery stores, pharmacies, gas stations, hospitals, nursing homes, emergency services, truckers, etc. These people don't NEED to serve us, they could quit, they're doing their jobs to take care of Americans, so treat them with kindness, respect and dignity. Thank them for their services. They're even more stressed than we are because they're going out everyday and possibly being exposed to this virus.<br><br>
+
+            1. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters</a><br><br>
+
+            2. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/when-and-how-to-use-masks</a><br><br>
+
+            3. <a href="https://www.dw.com/en/coronavirus-from-bats-to-pangolins-how-do-viruses-reach-us/a-52291570">https://www.dw.com/en/coronavirus-from-bats-to-pangolins-how-do-viruses-reach-us/a-52291570</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Other Countries</button>
+
+    <div class="content">
+
+        <p>
+
+            As of February 6th 2020, a total of four Zhejiang cities-Wenzhou, Hangzhou, Ningbo, and Taizhou-are under the "passport" system, allowing only one person per household to leave their home every two days to buy necessities. (5)<br><br>
+
+            Italy and Spain are both under nationwide quarantines. (2) On March 13th, 2020 the World Health Organization declared Europe the new epicentre of the COVID-19 epidemic after the rate of cases in Europe surpassed those in other regions of the world. (1)<br><br>
+
+            Italy's hospitals are overwhelmed and having to choose which patients are the most severe cases and should receive treatment and/or a hospital bed. People are being turned away and may die as a result.(3)(4)<br><br>
+
+            On 13 March 2020, a risk assessment by the the ECDC stated that the risk of healthcare system capacity being exceeded in the EU/EEA and the UK in the coming weeks is high. (6)<br><br>
+
+            1. <a href="https://www.bbc.com/news/world-europe-51876784">https://www.bbc.com/news/world-europe-51876784</a><br><br>
+
+            2. <a href="https://www.bbc.com/news/world-europe-51810673">https://www.bbc.com/news/world-europe-51810673</a><br><br>
+
+            3. <a href="https://www.reuters.com/article/us-health-coronavirus-italy-ethics-speci/all-is-well-in-italy-triage-and-lies-for-virus-patients-idUSKBN2133KG">https://www.reuters.com/article/us-health-coronavirus-italy-ethics-speci/all-is-well-in-italy-triage-and-lies-for-virus-patients-idUSKBN2133KG</a><br><br>
+
+            4. <a href="https://www.pbs.org/newshour/health/not-a-wave-a-tsunami-italy-hospitals-at-virus-limit">https://www.pbs.org/newshour/health/not-a-wave-a-tsunami-italy-hospitals-at-virus-limit</a><br><br>
+
+            5. <a href="https://www.channelnewsasia.com/news/asia/hangzhou-and-taizhou-cities-far-from-virus-epicentre-implement-12388714">https://www.channelnewsasia.com/news/asia/hangzhou-and-taizhou-cities-far-from-virus-epicentre-implement-12388714</a><br><br>
+
+            6. <a href="https://www.ecdc.europa.eu/en/current-risk-assessment-novel-coronavirus-situation">https://www.ecdc.europa.eu/en/current-risk-assessment-novel-coronavirus-situation</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Are There Available Vaccines or Treatments?</button>
+
+    <div class="content">
+
+        <p>
+
+            There is no vaccine or treatement for COVID-19 at this time, management involves treatment of the symptoms, supportive care, and isolation. (1) A vaccine is not expected to be available earlier than August of 2021 according to the World Health Organization. (2) As of early March 2020, approximately 41 vaccine candidates are in development. (3)<br><br>
+
+            1. <a href="https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html">https://www.cdc.gov/coronavirus/2019-ncov/prepare/prevention.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fabout%2Fprevention.html</a><br><br>
+
+            2. <a href="https://www.sciencealert.com/who-says-a-coronavirus-vaccine-is-18-months-away">https://www.sciencealert.com/who-says-a-coronavirus-vaccine-is-18-months-away</a><br><br>
+
+            3. <a href="https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf">https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <button class="collapsible">&emsp;&emsp;Donations</button>
+
+    <div class="content">
+
+        <p>
+
+            This is contrary to the recommendations to stay at home, but the United States is facing a blood shortage due to COVID-19 and we desperately need blood donations. If you feel comfortable and think you can stay safe while doing so, please donate blood. Look at the Red Cross website for more information. (1)<br><br>
+
+            The World Health Organization is accepting donations towards a response fund for COVID-19. (2) Robbreport.com also has an extensive list of places you can donate to. (3) <br><br>
+
+            1. <a href="https://www.redcrossblood.org/donate-blood/dlp/coronavirus--covid-19--and-blood-donation.html">https://www.redcrossblood.org/donate-blood/dlp/coronavirus--covid-19--and-blood-donation.html</a><br><br>
+
+            2. <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate">https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate</a><br><br>
+
+            3. <a href="https://robbreport.com/lifestyle/news/20-ways-to-support-coronavirus-relief-efforts-2905295/">https://robbreport.com/lifestyle/news/20-ways-to-support-coronavirus-relief-efforts-2905295/</a>
+
+        </p>
+
+    </div>
+
+    <hr width="97%">
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+</body></html>

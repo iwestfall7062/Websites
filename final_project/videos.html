@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Stoicism Examined</title>
+    <meta charset="utf-8">
+    <meta name="copyright" content="Stoicism Examined copyright Ian Westfall">
+    <meta name="description" content="Website about the philosophy of stoicism">
+    <meta name="keywords" content="Ian Westfall, Stoicism Examined, stoicism">
+    <meta name="author" content="Ian Westfall">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+
+                    $('.scrollup').fadeOut();
+                }
+            });
+            $('.scrollup').click(function() {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800);
+                return false;
+            });
+        });
+
+    </script>
+            <script>
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1><a href="index.html">Stoicism Examined</a></h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Core Principles</a>
+            <a href="quotes.html">Quotes</a>
+            <a href="stoics.html">Stoics</a>
+            <a href="books.html">Books</a>
+            <a href="videos.html">Videos</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i></a>
+        </div>
+    </header>
+    <div id="statues"><img src="images/statues.jpg" alt="statues of two men"></div>
+    <div id="quote">
+        <h3>“We suffer more in imagination than in reality.” - Seneca</h3>
+    </div>
+    <main>
+        <div>
+            <h2>Videos Exploring Stoicism</h2>
+        </div>
+        <div class="video_columns">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yu7n0XzqtfA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video_columns">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vOj5KLcymgA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video_columns">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dhrKg8_ltyQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video_columns">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qRM5VRIO_TU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video_columns">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3QztdN4hUKA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="video_columns">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o0MzQZ_eFEY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <a href="#menu-icon" class="scrollup"></a>
+    </footer>
+</body>
+
+</html>
